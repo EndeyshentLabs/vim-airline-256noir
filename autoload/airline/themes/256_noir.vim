@@ -2,11 +2,11 @@
 " (https://github.com/andreasvc/vim-256noir)
 "
 " License:      MIT
-" Maintainer:   Alejandro Garcia <tonadevv@gmail.com>
-" Repository:   https://github.com/tonadev/vim-airline-256noir
+" Maintainer:   Endeyshent Laboratories <Themikfound@gmail.com>
+" Repository:   https://github.com/EndeyshentLabs/vim-airline-256noir
 " Version:      1.0
 
-let s:theme = '256noir'
+let s:theme = '256_noir'
 
 let g:airline#themes#{s:theme}#palette = {}
 
@@ -16,7 +16,7 @@ let s:airline_b_normal = ['#8a8a8a', '#000000', 245, 16]
 let s:airline_c_normal = ['#8a8a8a', '#000000', 245, 16]
 
 let s:airline_warning = ['#ffff00', '#000000', 245, 16]
-let s:airline_error = ['ff0000', '#000000', 245, 16]
+let s:airline_error = ['#ff0000', '#000000', 245, 16]
 
 let g:airline#themes#{s:theme}#palette.normal = airline#themes#generate_color_map(
 	\ s:airline_a_normal, 
@@ -32,4 +32,3 @@ let g:airline#themes#{s:theme}#palette.replace = copy(g:airline#themes#{s:theme}
 let g:airline#themes#{s:theme}#palette.visual = copy(g:airline#themes#{s:theme}#palette.normal)
 let g:airline#themes#{s:theme}#palette.inactive = copy(g:airline#themes#{s:theme}#palette.normal)
 let g:airline#themes#{s:theme}#palette.terminal = copy(g:airline#themes#{s:theme}#palette.normal)
-
